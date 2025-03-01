@@ -3,48 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nikhil Dubey's blog on fitness, productivity, and self-improvement. Join the journey towards a disciplined and focused life.">
     <title>Nikhil Dubey - Blog</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        html, body {
+            scroll-behavior: smooth;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #2b2b2b;
+            color: #e0e0e0;
+            line-height: 1.6;
         }
         header {
-            background: #333;
+            background: #1e1e1e;
             color: white;
             padding: 15px;
             text-align: center;
-            font-size: 24px;
+            font-size: 26px;
+            font-weight: bold;
+        }
+        nav {
+            background: #3b3b3b;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+        }
+        nav a {
+            color: #f0f0f0;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s, text-decoration 0.3s;
+        }
+        nav a:hover {
+            background: #8b5a2b;
+            color: white;
+            text-decoration: underline;
         }
         .container {
             width: 80%;
+            max-width: 900px;
             margin: auto;
-            overflow: hidden;
             padding: 20px;
         }
-        .blog-post {
-            background: white;
-            padding: 20px;
+        .section {
+            background: #383838;
+            padding: 25px;
             margin-bottom: 20px;
             border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+            border-left: 4px solid #8b5a2b;
         }
-        .blog-post h2 {
-            color: #333;
+        a {
+            color: #d4a373;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
         }
-        .blog-post p {
-            color: #555;
+        a:hover {
+            color: #ffcc99;
+            font-size: 17px;
         }
         footer {
             text-align: center;
             padding: 10px;
-            background: #333;
+            background: #181818;
             color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            font-weight: bold;
+        }
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
 </head>
@@ -52,14 +86,48 @@
     <header>
         Nikhil Dubey - Fitness & Focused Life
     </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#blogs">My Blogs</a>
+        <a href="#workout-plan">My Workout Plan</a>
+        <a href="#get-in-touch">Get in Touch</a>
+    </nav>
     <div class="container">
-        <div class="blog-post">
-            <h2>Welcome to My Blog</h2>
-            <p>Hello! I’m Nikhil Dubey, a fitness enthusiast and a dedicated student. Follow my journey as I balance health, academics, and personal growth.</p>
+        <div class="section" id="about">
+            <h2>About Me</h2>
+            <p>Hi! I’m Nikhil Dubey, a passionate fitness enthusiast and a dedicated student. I strive to maintain a balance between academics and physical well-being. Join me as I share my experiences and insights on fitness, productivity, and self-improvement.</p>
         </div>
-        <div class="blog-post">
-            <h2>How Fitness Improves Focus</h2>
-            <p>Exercise isn't just about muscles, it’s about sharpening the mind. Discover how staying active helps me stay disciplined in studies.</p>
+        <div class="section" id="blogs">
+            <h2>My Blogs</h2>
+            <p>Explore my thoughts on fitness, study techniques, and maintaining discipline in everyday life. Stay tuned for more posts!</p>
+            <ul>
+                <li><strong>How Fitness Improves Focus:</strong> Exercise isn't just about muscles, it’s about sharpening the mind.</li>
+                <li><strong>Balancing Studies and Workouts:</strong> Tips to stay fit while excelling academically.</li>
+            </ul>
+        </div>
+        <div class="section" id="workout-plan">
+            <h2>My Workout Plan</h2>
+            <p>Fitness is a lifestyle. Here’s a glimpse of my weekly workout routine:</p>
+            <ul>
+                <li><strong>Monday:</strong> Chest & Shoulders</li>
+                <li><strong>Tuesday:</strong> Back</li>
+                <li><strong>Wednesday:</strong> Legs and Abs</li>
+                <li><strong>Thursday:</strong> Arms (Biceps + Triceps)</li>
+                <li><strong>Friday:</strong> Rest Day</li>
+                <li><strong>Saturday:</strong> Chest & Shoulders</li>
+                <li><strong>Sunday:</strong> Back</li>
+            </ul>
+            <p>I usually follow this 4-day cycle with one rest day on repeat.</p>
+        </div>
+        <div class="section" id="get-in-touch">
+            <h2>Get in Touch</h2>
+            <p>Connect with me on my social media platforms or drop me an email:</p>
+            <ul>
+                <li><strong>Instagram:</strong> <a href="https://instagram.com/yourprofile" target="_blank">@NIKHIL DUBEY</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nikhil-dubey-45b75631b" target="_blank">Nikhil Dubey</a></li>
+                <li><strong>Twitter:</strong> <a href="https://x.com/nikhilwithone_n" target="_blank">@NIKHIL DUBEY</a></li>
+                <li><strong>Email:</strong> <a href="mailto:Nikhildubey625@gmail.com">Nikhildubey625@gmail.com</a></li>
+            </ul>
         </div>
     </div>
     <footer>
